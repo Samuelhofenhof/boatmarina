@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat Marina Services</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+        header { height: 100vh; background: linear-gradient(to bottom right, #001f3f, #004466); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        header h1 { font-size: 3em; letter-spacing: 2px; font-weight: 700; margin: 0; color: #FFD700; }
+        header p { font-size: 1.5em; margin-top: 10px; font-style: italic; color: #FFD700; }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(0, 31, 63, 0.95); padding: 10px 0; text-align: center; z-index: 1000; }
+        nav a { color: #FFD700; margin: 0 20px; text-decoration: none; font-weight: bold; font-size: 1em; transition: color 0.3s; }
+        nav a:hover { color: #ffffff; }
+        section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+        h2 { color: #001f3f; font-size: 2em; margin-bottom: 20px; text-align: center; }
+        ul { list-style-type: none; padding: 0; }
+        li { background: #e0f0ff; margin: 10px 0; padding: 15px; border-radius: 8px; font-size: 1.1em; border-left: 5px solid #FFD700; }
+        footer { background: #001f3f; color: white; text-align: center; padding: 15px; }
+        .contact-form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+        .contact-form input, .contact-form textarea { margin: 10px 0; padding: 12px; border-radius: 6px; border: 1px solid #ccc; font-size: 1em; }
+        .contact-form button { background: #FFD700; color: #001f3f; padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-size: 1em; transition: background 0.3s; }
+        .contact-form button:hover { background: #FFC300; }
+        .scroll-btn { margin-top: 40px; padding: 10px 20px; font-size: 1.2em; border: 2px solid #FFD700; color: #FFD700; background: transparent; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+        .scroll-btn:hover { background: #FFD700; color: #001f3f; }
+        .team-member { background: #f0f0f0; margin: 10px 0; padding: 15px; border-radius: 8px; border-left: 5px solid #FFD700; }
+        .contact-info { text-align: center; margin-top: 20px; font-size: 1.1em; color: #001f3f; }
+        .about { background: #e8f4ff; padding: 30px; margin: 40px 0; border-radius: 10px; text-align: center; font-size: 1.1em; }
+        .about h2 { margin-bottom: 20px; color: #001f3f; }
+        .map-section { text-align: center; margin: 50px 0; }
+        .map-section iframe { width: 100%; max-width: 800px; height: 450px; border: 0; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#preise">Preise</a>
+        <a href="#team">Team</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <header>
+        <h1>Boat Marina Services</h1>
+        <p>Effizient. Vertrauenswürdig. Professionell.</p>
+        <button class="scroll-btn" onclick="document.getElementById('preise').scrollIntoView({behavior: 'smooth'});">Zu den Preisen</button>
+    </header>
+
+    <section id="services">
+        <h2>Unsere Services (Innenreinigung)</h2>
+        <ul>
+            <li>Cockpit und Innenraum säubern</li>
+            <li>Polieren und Wachsen innen</li>
+            <li>Fenster innen reinigen</li>
+            <li>Motorraum innen abwischen</li>
+        </ul>
+    </section>
+
+    <section id="preise">
+        <h2>Preise</h2>
+        <ul>
+            <li>Boote: 100–150 CHF</li>
+            <li>Stundenpreis: 50–80 CHF</li>
+        </ul>
+    </section>
+
+    <section class="about">
+        <h2>Wer wir sind</h2>
+        <p>Wir sind beide Schüler und möchten uns ein bisschen dazuverdienen, um unserem Traum, eines Tages eine eigene GmbH zu gründen, näher zu kommen. Mit Leidenschaft und Engagement reinigen wir Ihr Boot von innen, sodass es wieder wie neu aussieht. 
+        Schreiben Sie uns einfach eine Mail oder rufen Sie uns an – wir bringen unser eigenes Material mit und kümmern uns professionell um Ihr Boot. Unser Ziel ist es, zuverlässigen Service zu bieten, Qualität zu liefern und wertvolle Erfahrungen für unsere zukünftige Selbstständigkeit zu sammeln.</p>
+    </section>
+
+    <section class="map-section">
+        <h2>Unser Einsatzgebiet</h2>
+        <p>Wir reinigen Boote rund um den Bielersee, Murtensee und Neuenburgersee.</p>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1K2k3X2t0H3x4Y7mQ8oZL5nVqT6aFQfG8&hl=de" allowfullscreen></iframe>
+    </section>
+
+    <section id="team">
+        <h2>Unser Team</h2>
+        <div class="team-member">Nico Meyer – Unternehmensführer</div>
+        <div class="team-member">Nantnael Ahferom – Unternehmensführer</div>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-Mail" required>
+            <textarea placeholder="Nachricht" rows="4" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+        <div class="contact-info">
+            <p>Nico Meyer: 41792836616</p>
+            <p>Email: nico.meyer2006@icloud.com</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Boat Marina Services. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
