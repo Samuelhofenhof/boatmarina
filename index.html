@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming 4 everybody</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: #fff;
+      color: #333;
+      padding: 2rem 0 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .logo {
+      font-weight: bold;
+    }
+    .logo .blue {
+      color: #89CFF0;
+    }
+    .logo .red {
+      color: red;
+      font-size: 2.2rem;
+      vertical-align: middle;
+    }
+    nav ul {
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #666;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+      z-index: 2;
+    }
+    section { margin-bottom: 3rem; }
+    h2 {
+      color: #89CFF0;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: .5rem;
+    }
+    .button {
+      display: inline-block;
+      padding: .75rem 1.5rem;
+      background: #89CFF0;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .button:hover {
+      background: #5bb3e6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #f5f5f5;
+      color: #777;
+      position: relative;
+      z-index: 2;
+    }
+    /* Hintergrundformen */
+    .background-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.1;
+      animation: float 20s infinite linear;
+    }
+    .shape1 {
+      width: 300px;
+      height: 300px;
+      background: #89CFF0;
+      top: -100px;
+      left: -100px;
+    }
+    .shape2 {
+      width: 200px;
+      height: 200px;
+      background: #ccc;
+      bottom: -100px;
+      right: -50px;
+    }
+    .shape3 {
+      width: 150px;
+      height: 150px;
+      background: #89CFF0;
+      top: 50%;
+      left: -75px;
+    }
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(20px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-shape shape1"></div>
+  <div class="background-shape shape2"></div>
+  <div class="background-shape shape3"></div>
+
+  <header>
+    <h1 class="logo"><span class="blue">Gaming</span> <span class="red">4</span> <span class="blue">everybody</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#wer">Wer sind wir?</a></li>
+        <li><a href="#was">Was tun wir?</a></li>
+        <li><a href="#einzigartig">Was uns auszeichnet</a></li>
+        <li><a href="#kontakt">Spenden</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="wer">
+      <h2>Wer sind wir?</h2>
+      <p>Wir sind ein gemeinnütziger Schweizer Verein gegründet von <strong>Samuel Hofstetter</strong>, <strong>Marco Baumann</strong> und <strong>Sebastian Müller</strong>, der sich für eine sichere, inklusive Gaming-Community einsetzt.</p>
+    </section>
+
+    <section id="was">
+      <h2>Was tun wir?</h2>
+      <ul>
+        <li>Bereitstellung von Hardware- und Software-Support für Gamer ohne vollständiges Setup</li>
+        <li>Schutz und Unterstützung von Kindern und Jugendlichen, die im Online-Gaming gemobbt werden</li>
+        <li>Aufbau und Moderation einer non-toxischen Gaming-Plattform</li>
+      </ul>
+    </section>
+
+    <section id="einzigartig">
+      <h2>Was uns auszeichnet</h2>
+      <ul>
+        <li>Spezifischer Fokus auf Gaming und Anti-Mobbing im digitalen Raum</li>
+        <li>Kombination aus technischer Unterstützung (Leih-Setups) und psychosozialer Begleitung</li>
+        <li>Community Management durch erfahrene Gamer und Jugendschutz-Experten</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Spenden & Unterstützung</h2>
+      <p>Ihre Spende hilft uns, Setups bereitzustellen und Anti-Mobbing-Programme zu finanzieren. Als Dankeschön laden wir zweimal jährlich alle Unterstützer*innen zu einem gemeinsamen Essen ein.</p>
+      <a href="#" class="button">Jetzt Spenden</a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Gaming 4 everybody</p>
+  </footer>
+</body>
+</html>
